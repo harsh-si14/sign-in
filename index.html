@@ -162,38 +162,24 @@
        
 
         <div class="form">
-          <form action="">
+          <form action="sign-in.php" method="post">
             <h1 class="h3 mb-3 fw-normal">Sign up here</h1>
            
-           <input type="email" id="emailBox"  class="fore" placeholder=" name@example.com" /> 
-           <!-- <br /><br /> -->
-          <input type="password" id="pswBox" class="fore" placeholder="   password"/>
-            <!-- <br /><br /> -->
+           <input type="email" id="emailBox"  class="fore" name="uname"
+            placeholder=" name@example.com" autocomplete="off" /> 
+           
+          <input type="password" id="pswBox" class="fore" name="pwd"
+          placeholder="password" autocomplete="off"/>
+            
 
           
-            <button class="w-100 btn " type="submit">Sign in</button>
+            <button class="w-100 btn " type="submit" name="save">Sign in</button>
             <p class="mt-5 mb-3 text-muted">&copy; 2022-2023</p>
             <hr class="my-4">
-            <h2 class="fs-5 fw-bold ">Or use a third-party</h2>
-            <button class="w-100 py-1 mb-2 btn btn-outline-dark rounded-3" type="submit">
-              <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
-              <i class="icon-twitter"></i> 
-              Sign up with Twitter
-            </button>
-            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-              <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"/></svg>
-              <i class="icon-facebook"></i>
-              Sign up with Facebook
-            </button >
-            <button class="w-100 py-3 mb-2 btn btn-outline-secondary rounded-3" type="submit" >
-              <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"/></svg>
-              <i class="icon-github" ></i> 
-               Sign up with GitHub
-            </button>
+            
               
             </div>
           </form>
-          <script type="module"   src="./sign-in.js"></script>
-         
+          
 </body>
 </html>
