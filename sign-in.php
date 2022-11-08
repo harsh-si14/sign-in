@@ -1,7 +1,7 @@
 <?php
 $name = $_POST['uname'];
 $pass = $_POST['pwd'];
- echo $name.$pass;
+
 $connection=mysqli_connect("localhost","root","" ,"sigin-in");
 if(!$connection){
     die("problem in connection");
