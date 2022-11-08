@@ -10,7 +10,7 @@ if(isset($_POST['save'])){
    $insert_query="INSERT INTO userdata(uname,pwd) VALUES('$name','$pass')";
    if(mysqli_query($connection, $insert_query)){
     echo "succesfull";
-    header("refresh:5,url=index.html");
+    header("refresh:5,url=tour.html");
    }
    else{
     echo "unable to register";
